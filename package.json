@@ -1,0 +1,18 @@
+{
+  "name": "media-manager-api",
+  "version": "0.1.0",
+  "description": "Media manager api",
+  "main": "server.js",
+  "scripts": {
+    "start": "nodemon server.js"
+  },
+  "author": "Antonio Coppola",
+  "license": "MIT",
+  "devDependencies": {
+    "nodemon": "^1.18.4"
+  },
+  "dependencies": {
+    "aws-sdk": "^2.320.0",
+    "express": "^4.16.3"
+  }
+}
