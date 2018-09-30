@@ -54,7 +54,7 @@ const createFolder = (req, res) => {
         if (!err) error = 'Folder already exists.';
         if (err && err.code !== 'NotFound') error ='There was an error creating your folder: ' + err.message;
         if (error) {
-            res.status(400).send({error})
+            res.status(404).send({error})
             return;
         };
         S3.putObject(params, (err, data) => {

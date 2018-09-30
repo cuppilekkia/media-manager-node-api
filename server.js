@@ -9,4 +9,7 @@ app.listen(port);
 let folderRoutes = require('./api/routes/folder');
 folderRoutes(app);
 
+let fileRoutes = require('./api/routes/file');
+fileRoutes(app);
+
 console.log('server started on: ' + port);
